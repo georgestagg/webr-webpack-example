@@ -1,4 +1,4 @@
-import { WebR } from '@r-wasm/webr';
+import { WebR } from 'webr';
 
 /*
  * By default, webR will download R wasm binaries from CDN.

@@ -20,16 +20,21 @@ module.exports = {
     new CopyWebpackPlugin({
         patterns: [
           {
-            context: "node_modules/@r-wasm/webr/dist",
+            context: "node_modules/webr/dist",
             from: "webr-*.js",
           },
           {
-            context: "node_modules/@r-wasm/webr/dist",
+            context: "node_modules/webr/dist",
             from: "R.bin.*",
           },
           {
-            context: "node_modules/@r-wasm/webr/dist",
+            context: "node_modules/webr/dist",
             from: "*.so",
+          },
+          {
+            context: "node_modules/webr/dist",
+            from: "vfs",
+            to: "vfs",
           },
         ]
     })
